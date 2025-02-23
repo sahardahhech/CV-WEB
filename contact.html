@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours Académique</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="temoignage.html">Témoignage IIT</a></li>
+                <li><a href="quizz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contactez-moi</h1>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Prénom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                </div>
+                <div class="form-group">
+                    <label for="file">Importer un fichier</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </main>
+    
+    <script>
+        // Get the form and the success message
+        const form = document.getElementById('contactForm');
+        
+        // Prevent form submission and show the success message
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the form from submitting
+
+            // Display success message
+            alert("Votre message a été envoyé avec succès !");
+            
+            // Optionally reset the form
+            form.reset();
+        });
+    </script>
+
+    <footer>
+        <div class="socials">
+            <h3>Mon Contact</h3>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" target="_blank">
+            </a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" target="_blank">
+            </a>
+            <a href="https://github.com/">
+                <img src="img/github.png" alt="github" target="_blank">
+            </a>
+        </div>
+        <p>&copy; 2024 Mon Portfolio</p>
+    </footer>
+</body>
+</html>
